@@ -1,8 +1,12 @@
 # Web Fundamentals and HTTP Basics - Personal Study
+[![Node.js](https://img.shields.io/badge/Node.js-v21.6.2-green?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript&logoColor=white)](https://www.ecma-international.org/ecma-262/6.0/)
 
-## 🧐  Project Overview
+![image](https://github.com/v-dav/web_fundamentals/assets/115344057/7c0cf8ff-5753-4775-8511-56bc4dcc74e7)
 
-Welcome to my personal study repo on the fundamentals of the web and the Hypertext Transfer Protocol (HTTP). This project aims to deepen my understanding of basic web concepts and communication between clients and servers through the HTTP protocol.
+## 🧐 Overview
+
+Welcome to my study repo on the fundamentals of the web and the Hypertext Transfer Protocol (HTTP). This project aims to deepen my understanding of basic web concepts and communication between clients and servers through the HTTP protocol.
 
 ## 📖 Learning Objectives
 
@@ -45,11 +49,10 @@ Welcome to my personal study repo on the fundamentals of the web and the Hyperte
 
 ## Recommended Resources
 
-To achieve these objectives, you can refer to the following resources:
-
 - [MDN Web Docs - HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - [W3Schools - HTTP Tutorial](https://www.w3schools.com/whatis/whatis_http.asp)
-- [Google Web Fundamentals - HTTP Overview](https://developers.google.com/web/fundamentals/performance/http)
+- [Web Fundamentals](https://youtube.com/playlist?list=PL_kr51suci7XVVw4SJLZ0QQBAsL2K8Opy&si=kBH7ot_oBFxBggbO)
+- "HTTP The Definitive Guide" by David Gourley & Brian Totty
 
 ## 🙇 Author
 Vladimir Davidov
