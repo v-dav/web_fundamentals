@@ -11,7 +11,7 @@ app.get('/hello', (req, res) => {
 })
 
 app.delete('/hello', (req, res) => {
-	res.send("I don't want to say hello to you")
+	res.status(404).send("I don't want to say hello to you")
 })
 
 app.listen(port, () => {
