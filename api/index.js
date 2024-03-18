@@ -5,7 +5,7 @@ const app = express()
 const port = 3000
 app.use(express.json())
 
-
+// ---------------------------------------- //
 const addListing = (newItem) => {
 	data = [...data, newItem]
 }
@@ -21,7 +21,9 @@ const findListing = (id) => {
 // PUT /listings/id - update the specific listing matching the id
 // DELETE /listings/id - delete the listing matching the id from the list
 
+// ---------------------------------------- //
 // Basic examples of the API
+
 app.get('/', (req, res) => {
 	res.send("Hello World")
 })
@@ -34,8 +36,11 @@ app.delete('/hello', (req, res) => {
 	res.status(404).send("I don't want to say hello to you")
 })
 
+// ---------------------------------------- //
 // Our listing exemple API
+
 app.get("/listings", (req, res) => {
+	res.setHeader("Access-Control-Allow-Origin", "http://localhost:8000")
 	res.send(data)
 })
 
@@ -70,8 +75,9 @@ app.put("/listings/:id", (req, res) => {
 	}
 })
 
-
+// ---------------------------------------- //
 // App listens to the socket
+
 app.listen(port, () => {
 	console.log(`Example app listening to the port ${port}`)
 })
