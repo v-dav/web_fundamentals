@@ -8,5 +8,30 @@ body {
 .header {
 	background-color: #fff;
 	padding: 10px 30px;
+	text-align: center;
 }
 
+.listings-container {
+	display: flex;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 20px;
+	justify-content: space-between;
+}
+.listing {
+	max-width: 250px;
+	background-color: #fff;
+}
+
+.listing-inner-container {
+	padding: 8px;
+	text-align: center;
+}
+
+.listing-header {
+	font-size: 1rem;
+}
+
+.listing img {
+	max-width: 100%;
+}
