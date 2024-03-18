@@ -19,6 +19,13 @@ const listing = [
 		desciption: "Fine appartment in the center London",
 		price: 6000,
 		imageUrl: "https://somecdn.com/image"
+	},
+	{
+		id: 4,
+		header: "London huge house",
+		desciption: "Fine appartment in the center London",
+		price: 6000,
+		imageUrl: "https://somecdn.com/image"
 	}
 ]
 
