@@ -10,6 +10,10 @@ const addListing = (newItem) => {
 	data = [...data, newItem]
 }
 
+const findListing = (id) => {
+	return data.find(item => item.id === Number(id))
+}
+
 // GET /listings - return the full list of listings
 // POST /listings - create a new listing
 
@@ -40,6 +44,34 @@ app.post("/listings", (req, res) => {
 	res.status(201).send(data)
 })
 
+app.get("/listings/:id", (req, res) => {
+	const id = req.params.id
+	const listing = findListing(id)
+	if (listing) {
+		res.send(listing)
+	} else {
+		res.status(404).send("No listing found with that id")
+	}
+})
+
+app.put("/listings/:id", (req, res) => {
+	const id = req.params.id
+	const listing = findListing(id)
+
+	if (listing) {
+		const body = req.body
+		console.log(body)
+		Object.keys(body).forEach(key => {
+			listing[key] = body[key]
+		})
+		res.status(200).send(listing)
+	} else {
+		res.status(404).send("No listing found with that id")
+	}
+})
+
+
+// App listens to the socket
 app.listen(port, () => {
 	console.log(`Example app listening to the port ${port}`)
 })
